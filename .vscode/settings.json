@@ -1,5 +1,0 @@
-{
-    "terminal.integrated.env.windows": {
-        "PATH": "C:\\Users\\adi\\.platformio\\penv\\Scripts;C:\\msys64\\ucrt64\\bin;${env:PATH}"
-    }
-}

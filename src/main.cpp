@@ -17,7 +17,7 @@ static_assert(__cplusplus >= 201703L, "C++17 not enabled"); // confirm the use o
 
 typedef enum{
   NOTIFY_SCHEDULE_UPDATED = 0b0001,
-  ALARM_TRIGGERED = 0b0010  // important: due to bitwise accumulation, make sure each value has unique bit that is set (ex: dont use 0b0011 when 0b0001 and 0b0010 exist)
+  ALARM_TRIGGERED = 0b0010  // important: each value has unique bit to avoid conflict (ex: use 0b0011 activate 0b0001 and 0b0010)
 } scheduleTask_enum;
 
 struct Schedule{
